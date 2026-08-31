@@ -1,0 +1,31 @@
+[
+  {
+    "clause": "Section 5.2",
+    "title": "Standard Service Guarantee",
+    "document": "01_Support_Policy_v3.pdf",
+    "rule": "25% Service Credit for carrier-fault delays >= 4.0 hours from scheduled delivery window.",
+    "tier": "Tier 2"
+  },
+  {
+    "clause": "Section 5.1",
+    "title": "Non-Carrier Exclusion",
+    "document": "01_Support_Policy_v3.pdf",
+    "rule": "Delays caused by weather, customs, or incorrect destination address are ineligible for automated credits.",
+    "tier": "Tier 2"
+  },
+  {
+    "clause": "Section 3.1",
+    "title": "Standard Cancellation Assessment",
+    "document": "03_Cancellation_SOP_v4.pdf",
+    "rule": "Standard flat $50.00 (₹4,000) cancellation fee applies to all cancellations requested < 24 hours before pickup.",
+    "tier": "Tier 2"
+  },
+  {
+    "clause": "Section 8.2 (BANNED)",
+    "title": "Deprecated 10% Discretionary Buffer",
+    "document": "02_Support_Policy_v2_DEPRECATED.pdf",
+    "rule": "STRICTLY BANNED: Past discretionary 10% credit without threshold verification is prohibited under Governance v4.",
+    "tier": "Tier 3",
+    "isDeprecated": true
+  }
+]

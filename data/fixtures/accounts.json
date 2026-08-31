@@ -1,0 +1,75 @@
+{
+  "ACC-NORTHSTAR": {
+    "id": "ACC-NORTHSTAR",
+    "name": "Northstar Logistics",
+    "tier": "Enterprise Tier 1",
+    "monthlyCreditCap": 5000,
+    "monthlyCreditUsed": 800,
+    "activeContracts": ["AGMT-NS-2025-01 (05_Northstar_Logistics_Enterprise_Agreement.pdf)"],
+    "clauses": [
+      {
+        "clause": "Clause 4.1",
+        "title": "Enterprise Cancellation Fee Waiver",
+        "document": "05_Northstar_Logistics_Enterprise_Agreement.pdf",
+        "rule": "Waives 100% of standard cancellation fees ($0.00 / ₹0.00) whenever notice is provided >= 2.0 hours prior to scheduled pickup window start.",
+        "tier": "Tier 1"
+      },
+      {
+        "clause": "Clause 4.2",
+        "title": "Carrier-Fault Delay Service Credit",
+        "document": "05_Northstar_Logistics_Enterprise_Agreement.pdf",
+        "rule": "100% Service Credit of shipment fee for any carrier-fault delay >= 2.0 hours from scheduled delivery window.",
+        "tier": "Tier 1"
+      },
+      {
+        "clause": "Clause 7.3",
+        "title": "Priority Escalation Tier",
+        "document": "05_Northstar_Logistics_Enterprise_Agreement.pdf",
+        "rule": "Direct Tier-3 Carrier Liaison dispatch for SLA breaches exceeding 2.0 hours.",
+        "tier": "Tier 1"
+      }
+    ]
+  },
+  "ACC-LUMENWORKS": {
+    "id": "ACC-LUMENWORKS",
+    "name": "LumenWorks",
+    "tier": "Enterprise Tier 1",
+    "monthlyCreditCap": 4000,
+    "monthlyCreditUsed": 650,
+    "activeContracts": ["AGMT-LW-2024-09 (06_LumenWorks_Service_Agreement.pdf)"],
+    "clauses": [
+      {
+        "clause": "Clause 3.4",
+        "title": "Carrier Delay Service Credit",
+        "document": "06_LumenWorks_Service_Agreement.pdf",
+        "rule": "50% Service Credit of shipment fee for carrier-fault delays >= 3.0 hours.",
+        "tier": "Tier 1"
+      },
+      {
+        "clause": "Clause 3.2",
+        "title": "Notice Cancellation Schedule",
+        "document": "06_LumenWorks_Service_Agreement.pdf",
+        "rule": "Standard cancellation fee reduced to $25 (₹2,000) when notice >= 3.0 hours prior to pickup.",
+        "tier": "Tier 1"
+      }
+    ]
+  },
+  "ACC-BEACON": {
+    "id": "ACC-BEACON",
+    "name": "Beacon Retail",
+    "tier": "Standard Tier 2",
+    "monthlyCreditCap": 1500,
+    "monthlyCreditUsed": 200,
+    "activeContracts": ["Standard Terms of Service v4.2"],
+    "clauses": []
+  },
+  "ACC-AXIS": {
+    "id": "ACC-AXIS",
+    "name": "Axis Labs",
+    "tier": "Standard Tier 2",
+    "monthlyCreditCap": 1500,
+    "monthlyCreditUsed": 0,
+    "activeContracts": ["Standard Terms of Service v4.2"],
+    "clauses": []
+  }
+}

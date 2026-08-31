@@ -1,0 +1,47 @@
+[
+  {
+    "ticket_id": "TKT-501",
+    "order_id": "ORD-1001",
+    "account_id": "ACC-NORTHSTAR",
+    "priority": "CRITICAL",
+    "sla_breached": true,
+    "issue": "SEV-0 Outage: All shipment creation failing with HTTP 500 across Northstar tenant",
+    "status": "OPEN"
+  },
+  {
+    "ticket_id": "TKT-502",
+    "order_id": "ORD-2001",
+    "account_id": "ACC-LUMENWORKS",
+    "priority": "HIGH",
+    "sla_breached": true,
+    "issue": "Bulk Upload Failure: 4,200-row CSV terminates at 70% (BUG-1044 V8 Heap Limit)",
+    "status": "OPEN"
+  },
+  {
+    "ticket_id": "TKT-503",
+    "order_id": "ORD-3001",
+    "account_id": "ACC-BEACON",
+    "priority": "MEDIUM",
+    "sla_breached": false,
+    "issue": "Account Management: Request to update primary billing contact email",
+    "status": "OPEN"
+  },
+  {
+    "ticket_id": "TKT-504",
+    "order_id": "ORD-1001",
+    "account_id": "ACC-NORTHSTAR",
+    "priority": "HIGH",
+    "sla_breached": false,
+    "issue": "Telemetry Inconsistency: SwiftShip driver picked up but order still shows BOOKED (BUG-1092)",
+    "status": "OPEN"
+  },
+  {
+    "ticket_id": "TKT-505",
+    "order_id": "ORD-4001",
+    "account_id": "ACC-AXIS",
+    "priority": "CRITICAL",
+    "sla_breached": true,
+    "issue": "SEV-1 Security Incident: Production API key screenshot exposed in public channel",
+    "status": "OPEN"
+  }
+]

@@ -1,0 +1,2 @@
+# Raw dataset storage directory (PDF agreements, Excel sheets)
+# Safe to delete - ParcelPilot will seamlessly use /data/fixtures/ fallbacks without crashing.

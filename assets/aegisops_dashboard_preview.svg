@@ -1,0 +1,179 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 680" width="1200" height="680" style="background:#09090b; font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <linearGradient id="headerGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="100%" stop-color="#0f0f12"/>
+    </linearGradient>
+    <linearGradient id="amberCardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a1705"/>
+      <stop offset="50%" stop-color="#1c0f02"/>
+      <stop offset="100%" stop-color="#0c0701"/>
+    </linearGradient>
+    <linearGradient id="radarCardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#18181b"/>
+      <stop offset="100%" stop-color="#101014"/>
+    </linearGradient>
+    <linearGradient id="btnAmber" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <filter id="shadowGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#f59e0b" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- BACKGROUND -->
+  <rect width="1200" height="680" fill="#09090b"/>
+  
+  <!-- APP HEADER -->
+  <rect x="0" y="0" width="1200" height="56" fill="url(#headerGrad)" stroke="#27272a" stroke-width="1"/>
+  
+  <!-- LOGO & BADGE -->
+  <rect x="20" y="12" width="32" height="32" rx="8" fill="#f59e0b"/>
+  <path d="M30 20 L42 28 L36 40 L24 34 Z" fill="#000" opacity="0.8"/>
+  <circle cx="36" cy="28" r="3" fill="#fff"/>
+  <text x="62" y="33" fill="#ffffff" font-size="16" font-weight="800" letter-spacing="0.5">AEGISOPS</text>
+  <rect x="150" y="18" width="138" height="20" rx="10" fill="#27272a" stroke="#3f3f46" stroke-width="1"/>
+  <text x="160" y="32" fill="#a1a1aa" font-size="10" font-weight="600">⚡ GEMINI 3.5 FLASH</text>
+  
+  <!-- HEADER STATS & CONTROLS -->
+  <rect x="680" y="14" width="220" height="28" rx="6" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+  <circle cx="696" cy="28" r="4" fill="#22c55e"/>
+  <text x="708" y="32" fill="#e4e4e7" font-size="11" font-family="monospace">SNAPSHOT: 2026-08-16 11:00 IST</text>
+
+  <!-- ROLE SWITCHER & TENANT -->
+  <rect x="910" y="14" width="135" height="28" rx="6" fill="#2e1065" stroke="#7c3aed" stroke-width="1"/>
+  <text x="922" y="32" fill="#d8b4fe" font-size="11" font-weight="700">⚙ Internal Ops</text>
+
+  <rect x="1055" y="14" width="125" height="28" rx="6" fill="#1c1917" stroke="#44403c" stroke-width="1"/>
+  <text x="1067" y="32" fill="#fbbf24" font-size="11" font-weight="600">Northstar Logistics</text>
+
+  <!-- MAIN WORKSPACE LAYOUT: 2-COLUMN -->
+  <!-- LEFT: CHAT & HITL GATE (width: 780) -->
+  <rect x="20" y="70" width="760" height="590" rx="12" fill="#121215" stroke="#27272a" stroke-width="1"/>
+  
+  <!-- AMBER APPROVAL GATE (HITL BANNER) -->
+  <g filter="url(#shadowGlow)">
+    <rect x="36" y="86" width="728" height="150" rx="10" fill="url(#amberCardGrad)" stroke="#f59e0b" stroke-width="1.5"/>
+    
+    <!-- AMBER HEADER -->
+    <rect x="50" y="98" width="130" height="20" rx="4" fill="#f59e0b"/>
+    <text x="58" y="112" fill="#000000" font-size="10" font-weight="900" letter-spacing="0.5">AMBER APPROVAL GATE</text>
+    <text x="190" y="112" fill="#fbbf24" font-size="11" font-family="monospace">STATE: STAGED_AWAITING_CONFIRMATION</text>
+    
+    <!-- ACTION DETAILS -->
+    <text x="50" y="140" fill="#ffffff" font-size="14" font-weight="700">ISSUE_SERVICE_CREDIT · Consignment ORD-2002</text>
+    <text x="50" y="160" fill="#d4d4d8" font-size="11">Carrier Delay Violation: RoadRunner (4.5h Delay ≥ 3.0h Tier 1 Threshold)</text>
+    <text x="50" y="178" fill="#fbbf24" font-size="11" font-family="monospace">Entitlement: 50% Service Credit · ₹1,200 ($15.00 USD) · Clause 3.4 Override</text>
+    
+    <!-- BUTTONS -->
+    <rect x="50" y="194" width="150" height="28" rx="6" fill="url(#btnAmber)"/>
+    <text x="70" y="212" fill="#000000" font-size="11" font-weight="800">✓ CONFIRM &amp; EXECUTE</text>
+    
+    <rect x="210" y="194" width="90" height="28" rx="6" fill="#27272a" stroke="#3f3f46" stroke-width="1"/>
+    <text x="238" y="212" fill="#a1a1aa" font-size="11" font-weight="600">REJECT</text>
+
+    <rect x="580" y="194" width="168" height="28" rx="6" fill="#3b0764" stroke="#9333ea" stroke-width="1"/>
+    <text x="592" y="212" fill="#e9d5ff" font-size="10" font-weight="700">⚡ STAGE ALL (BATCH 3)</text>
+  </g>
+
+  <!-- CHAT STREAM CONVERSATION -->
+  <!-- USER MSG -->
+  <rect x="360" y="252" width="404" height="42" rx="8" fill="#27272a" stroke="#3f3f46" stroke-width="1"/>
+  <text x="374" y="278" fill="#e4e4e7" font-size="12">Audit carrier delay liability for consignment ORD-2002</text>
+
+  <!-- AGENT RESPONSE CARD -->
+  <rect x="36" y="306" width="728" height="230" rx="10" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+  <circle cx="56" cy="326" r="10" fill="#f59e0b" opacity="0.2"/>
+  <text x="52" y="330" fill="#fbbf24" font-size="12">✦</text>
+  <text x="76" y="330" fill="#ffffff" font-size="13" font-weight="700">AegisOps Autonomous Intelligence Engine</text>
+  <text x="640" y="330" fill="#71717a" font-size="10" font-family="monospace">SPAN: gemini_call_01</text>
+
+  <line x1="50" y1="346" x2="748" y2="346" stroke="#27272a" stroke-width="1"/>
+
+  <!-- PRECEDENCE CHECK BADGES -->
+  <rect x="50" y="358" width="140" height="20" rx="4" fill="#052e16" stroke="#16a34a" stroke-width="1"/>
+  <text x="58" y="372" fill="#4ade80" font-size="10" font-weight="700">TIER 1 MSA: OVERRIDE</text>
+
+  <rect x="200" y="358" width="165" height="20" rx="4" fill="#451a03" stroke="#b45309" stroke-width="1"/>
+  <text x="208" y="372" fill="#fbbf24" font-size="10" font-weight="700">CARRIER FAULT VERIFIED</text>
+
+  <rect x="375" y="358" width="155" height="20" rx="4" fill="#1e1b4b" stroke="#4338ca" stroke-width="1"/>
+  <text x="383" y="372" fill="#a5b4fc" font-size="10" font-weight="700">OTEL SPAN RECORDED</text>
+
+  <!-- AGENT ANALYSIS TEXT -->
+  <text x="50" y="405" fill="#e4e4e7" font-size="12" font-weight="600">Audit Findings &amp; Precedence Application:</text>
+  <text x="50" y="425" fill="#a1a1aa" font-size="11">• Scheduled Pickup Window End: 06:30 IST | System Snapshot: 11:00 IST (4.5 hours elapsed delay)</text>
+  <text x="50" y="443" fill="#a1a1aa" font-size="11">• Contract Clause 3.4 (LumenWorks Agreement) grants 50% service credit for carrier fault delay ≥ 3.0h.</text>
+  <text x="50" y="461" fill="#a1a1aa" font-size="11">• Action staged in Amber Gate awaiting operator 2PC authorization before ledger write.</text>
+  
+  <!-- FIRESTORE SYNC PILL -->
+  <rect x="50" y="482" width="310" height="24" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="60" y="498" fill="#38bdf8" font-size="10" font-family="monospace">☁ FIRESTORE: live onSnapshot stream active</text>
+
+  <!-- CHAT INPUT BAR -->
+  <rect x="36" y="556" width="728" height="42" rx="8" fill="#18181b" stroke="#3f3f46" stroke-width="1"/>
+  <text x="52" y="582" fill="#71717a" font-size="12">Ask AegisOps to audit orders, stage cancellations, or triage SLA anomalies...</text>
+  <rect x="680" y="562" width="74" height="30" rx="6" fill="#f59e0b"/>
+  <text x="704" y="581" fill="#000000" font-size="11" font-weight="800">SEND</text>
+
+
+  <!-- RIGHT: OPS ANOMALY RADAR SIDEBAR (width: 380) -->
+  <rect x="800" y="70" width="380" height="590" rx="12" fill="url(#radarCardGrad)" stroke="#27272a" stroke-width="1"/>
+  
+  <!-- RADAR HEADER -->
+  <circle cx="824" cy="94" r="6" fill="#ef4444" opacity="0.8"/>
+  <circle cx="824" cy="94" r="3" fill="#ef4444"/>
+  <text x="838" y="99" fill="#ffffff" font-size="14" font-weight="800">OPS ANOMALY RADAR</text>
+  <rect x="1080" y="84" width="85" height="20" rx="4" fill="#450a0a" stroke="#dc2626" stroke-width="1"/>
+  <text x="1088" y="98" fill="#f87171" font-size="9" font-weight="800">3 CRITICAL SEV</text>
+
+  <!-- RADAR METRICS -->
+  <rect x="816" y="120" width="168" height="54" rx="8" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+  <text x="828" y="138" fill="#71717a" font-size="10" font-weight="600">CARRIER DELAYS (≥2h)</text>
+  <text x="828" y="162" fill="#ef4444" font-size="20" font-weight="800">2 Orders</text>
+
+  <rect x="996" y="120" width="168" height="54" rx="8" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+  <text x="1008" y="138" fill="#71717a" font-size="10" font-weight="600">SLA RISK VALUE</text>
+  <text x="1008" y="162" fill="#fbbf24" font-size="20" font-weight="800">₹6,600</text>
+
+  <!-- ANOMALY CLUSTER CARDS -->
+  <text x="816" y="196" fill="#a1a1aa" font-size="11" font-weight="700">CARRIER BOTTLENECK CLUSTERS</text>
+  
+  <!-- CARD 1 -->
+  <rect x="816" y="206" width="348" height="68" rx="8" fill="#18181b" stroke="#ef4444" stroke-width="1"/>
+  <text x="828" y="226" fill="#ffffff" font-size="12" font-weight="700">RoadRunner Pickup Failure</text>
+  <text x="1070" y="226" fill="#f87171" font-size="10" font-family="monospace">ORD-2002</text>
+  <text x="828" y="244" fill="#a1a1aa" font-size="10">4.5h delay past window · LumenWorks</text>
+  <rect x="828" y="250" width="80" height="16" rx="3" fill="#450a0a"/>
+  <text x="834" y="262" fill="#fca5a5" font-size="9" font-weight="700">STAGE CREDIT</text>
+
+  <!-- CARD 2 -->
+  <rect x="816" y="284" width="348" height="68" rx="8" fill="#18181b" stroke="#f59e0b" stroke-width="1"/>
+  <text x="828" y="304" fill="#ffffff" font-size="12" font-weight="700">HTTP 500 Outage (SwiftShip)</text>
+  <text x="1070" y="304" fill="#fbbf24" font-size="10" font-family="monospace">TKT-501</text>
+  <text x="828" y="322" fill="#a1a1aa" font-size="10">All shipment creation failing · Northstar</text>
+  <rect x="828" y="328" width="90" height="16" rx="3" fill="#451a03"/>
+  <text x="834" y="340" fill="#fde68a" font-size="9" font-weight="700">ESCALATE SEV-0</text>
+
+  <!-- LIVE COMMITTED LEDGER SNIPPET -->
+  <text x="816" y="374" fill="#a1a1aa" font-size="11" font-weight="700">RECENT COMMITTED FIRESTORE TRANSACTIONS</text>
+
+  <rect x="816" y="384" width="348" height="48" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+  <text x="828" y="402" fill="#38bdf8" font-size="11" font-family="monospace">TXN-79401 · FEE_WAIVED</text>
+  <text x="828" y="420" fill="#94a3b8" font-size="10">ORD-1001 · Northstar · ₹0.00 ($0.00)</text>
+  <text x="1090" y="412" fill="#4ade80" font-size="10">✓ SYNCED</text>
+
+  <rect x="816" y="440" width="348" height="48" rx="6" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+  <text x="828" y="458" fill="#38bdf8" font-size="11" font-family="monospace">TXN-82194 · SERVICE_CREDIT</text>
+  <text x="828" y="476" fill="#94a3b8" font-size="10">ORD-2002 · LumenWorks · ₹1,200</text>
+  <text x="1090" y="468" fill="#4ade80" font-size="10">✓ SYNCED</text>
+
+  <!-- DIAGNOSTIC BENCHMARK SUMMARY -->
+  <rect x="816" y="504" width="348" height="80" rx="8" fill="#18181b" stroke="#27272a" stroke-width="1"/>
+  <text x="828" y="524" fill="#ffffff" font-size="11" font-weight="700">SYSTEM HEALTH &amp; TELEMETRY</text>
+  <text x="828" y="542" fill="#a1a1aa" font-size="10">• OpenTelemetry Tracer: Active (12 Spans / 0 Errors)</text>
+  <text x="828" y="558" fill="#a1a1aa" font-size="10">• Cloud Firestore DB: Connected (5ms ping)</text>
+  <text x="828" y="574" fill="#a1a1aa" font-size="10">• RBAC Boundary: Enforced (Anti-Snooping 403 active)</text>
+
+</svg>

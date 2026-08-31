@@ -1,0 +1,8 @@
+{
+  "name": "AegisOps — Autonomous B2B Logistics Multi-Step Orchestrator",
+  "description": "AegisOps is an autonomous B2B logistics multi-step orchestrator featuring a 3-tier contract precedence engine, RBAC tenant isolation, 2-phase human-in-the-loop Amber Approval Gate with atomic Firestore ledger persistence, real-time OpenTelemetry distributed tracing, and an Ops Anomaly Radar.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

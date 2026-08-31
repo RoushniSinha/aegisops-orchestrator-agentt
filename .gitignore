@@ -1,0 +1,65 @@
+# ======================================================================
+# PARCELPILOT PRODUCTION GITIGNORE CONFIGURATION
+# ======================================================================
+
+# 1. Environment & Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+!.env.example
+
+# 2. Dependencies & Package Managers
+node_modules/
+.pnp
+.pnp.js
+package-lock.json.bak
+yarn-error.log*
+npm-debug.log*
+pnpm-debug.log*
+
+# 3. Build & Compiler Artifacts
+dist/
+dist-ssr/
+build/
+coverage/
+*.tsbuildinfo
+.vite/
+.next/
+out/
+__pycache__/
+*.pyc
+
+# 4. Operating System & Editor Metadata
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+
+# 5. Runtime Logs & Caches
+*.log
+logs/
+*.pid
+*.seed
+*.pid.lock
+
+# 6. Raw Data Files & Removable Artifacts
+data/raw/*.pdf
+data/raw/*.xlsx
+data/raw/*.csv
+!data/raw/.gitkeep
+
+# 7. Preserved Static JSON Fixtures (ALWAYS KEEP)
+!data/fixtures/*.json

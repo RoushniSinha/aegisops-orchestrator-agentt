@@ -1,0 +1,20 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /orders/{orderId} {
+      allow read: if request.auth.token.role == 'internal_ops' || 
+                     resource.data.account_id == request.auth.token.account_id;
+      allow write: if request.auth.token.role == 'internal_ops';
+    }
+    match /ledger_entries/{entryId} {
+      allow read: if request.auth.token.role == 'internal_ops' || 
+                     resource.data.account_id == request.auth.token.account_id;
+      allow create: if request.auth != null;
+      allow update: if request.auth.token.role == 'internal_ops'; // Only internal ops can void
+    }
+    match /users/{userId} {
+      allow read, write: if request.auth != null;
+    }
+  }
+}
+

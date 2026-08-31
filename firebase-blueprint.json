@@ -1,0 +1,58 @@
+{
+  "entities": {
+    "User": {
+      "title": "User Profile",
+      "description": "User profile with role-based access control and account association",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string" },
+        "displayName": { "type": "string" },
+        "role": { "type": "string", "enum": ["customer", "internal_ops"] },
+        "accountId": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "lastLoginAt": { "type": "string" }
+      },
+      "required": ["uid", "email", "role", "accountId"]
+    },
+    "LedgerEntry": {
+      "title": "Committed Ledger Entry",
+      "description": "Immutable operational & billing execution log committed by operator approval",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "action_type": { "type": "string" },
+        "target_id": { "type": "string" },
+        "account_id": { "type": "string" },
+        "timestamp": { "type": "string" },
+        "amountUSD": { "type": "number" },
+        "amountINR": { "type": "number" },
+        "feeUSD": { "type": "number" },
+        "feeINR": { "type": "number" },
+        "citation": { "type": "string" },
+        "txHash": { "type": "string" },
+        "details": { "type": "string" },
+        "documentName": { "type": "string" },
+        "tierLevel": { "type": "string" },
+        "operatorUid": { "type": "string" },
+        "operatorEmail": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "status": { "type": "string", "enum": ["COMMITTED", "VOIDED"] },
+        "voidedAt": { "type": "string" },
+        "voidReason": { "type": "string" },
+        "batchId": { "type": "string" }
+      },
+      "required": ["action_type", "target_id", "account_id", "txHash", "citation"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "entity": "User",
+      "description": "User profile document defining role ('customer' or 'internal_ops') and tenant accountId"
+    },
+    "/ledger_entries/{entryId}": {
+      "entity": "LedgerEntry",
+      "description": "Immutable operational and billing action records persisted across sessions"
+    }
+  }
+}
